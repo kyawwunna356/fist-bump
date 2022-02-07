@@ -1,0 +1,27 @@
+<!doctype html>
+<body>
+  <ul>
+    <li class="item">apple</li>
+    <li class="item orange">orange</li>
+    <li class="item">pear</li>
+  </ul>
+  <p>hello</p>
+
+<script>
+  // can be any collection instead of document.body.children
+  list = document.querySelectorAll('.item')
+    console.log(list)
+  for (let elem of list) {
+    if (elem.matches('.orange')) {
+      console.log(`${elem.textContent} is orange`)
+      
+    }
+    
+  }
+  const ul = document.querySelector('ul')
+    const li = document.querySelector('li')
+    const p = document.querySelector('p')
+    console.log(ul.contains(p))
+  
+</script>
+</body>
